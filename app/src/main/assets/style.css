@@ -1,0 +1,9 @@
+button{
+  display:none;
+  visibility: hidden;
+}
+
+.v-input__control{
+  display:none;
+  visibility: hidden;
+}
