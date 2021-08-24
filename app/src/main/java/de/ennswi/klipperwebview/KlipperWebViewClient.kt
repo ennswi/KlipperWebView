@@ -38,12 +38,12 @@ class KlipperWebViewClient(pActivity: Activity) : WebViewClient() {
     }
 
     override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-
+        webView = view!!
         if (isLockEnabled) {
             injectCSS();
         }
 
-        webView = view!!
+
         super.onPageStarted(view, url, favicon)
     }
 
